@@ -10,10 +10,10 @@ std::list<cereal> cereals;
 
 	
 
-void Nutrition::addcereal(std::string f_name,int f_cal,int f_protein,int f_fat,int f_sodium,double f_fiber,double f_carbo,int f_sugars,int f_potass,int f_vitamins,double f_rating,int f_shelf)
+void Nutrition::addcereal(std::string &f_name,int f_cal,int f_protein,int f_fat,int f_sodium,double f_fiber,double f_carbo,int f_sugars,int f_potass,int f_vitamins,double f_rating,int f_shelf)
 {
 	
-cereals.push_back(cereal(f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_carbo, f_sugars, f_potass, f_vitamins, f_rating, f_shelf));
+cereals.push_back(cereal(&f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_carbo, f_sugars, f_potass, f_vitamins, f_rating, f_shelf));
 
 }
    cereal* Nutrition::removecereal(std::string f_name)
@@ -30,7 +30,7 @@ cereals.push_back(cereal(f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_c
     }
     return NULL;
 }
-   bool Nutrition::findCerealByName(std::string c_name)
+   bool Nutrition::findCerealByName(std::string &c_name)
    {
    	 std::list<cereal> :: iterator iter;
 
