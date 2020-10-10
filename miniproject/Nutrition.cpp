@@ -20,7 +20,7 @@ cereals.push_back(cereal(&f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_
 {
    	std::list<cereal> :: iterator iter;
 
-    for(iter=cereals.begin();iter!=cereals.end();iter++)
+    for(iter=cereals.begin();iter!=cereals.end();++iter)
     {
         if(iter->getcerealname()== f_name)
         {
@@ -34,7 +34,7 @@ cereals.push_back(cereal(&f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_
    {
    	 std::list<cereal> :: iterator iter;
 
-    for(iter=cereals.begin();iter!=cereals.end();iter++)
+    for(iter=cereals.begin();iter!=cereals.end();++iter)
     {
         if(c_name == iter->getcerealname())
         {
@@ -47,7 +47,7 @@ cereals.push_back(cereal(&f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_
    {
    	 double sum=0;
     std:: list <cereal>::iterator iter;
-    for(iter=cereals.begin();iter!=cereals.end();iter++)
+    for(iter=cereals.begin();iter!=cereals.end();++iter)
     {
         sum = sum+iter->getfat();
     }
@@ -90,7 +90,7 @@ cereals.push_back(cereal(&f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_
    	auto min_iter=iter;
    	int minval=cereals.begin()->getfat();
    	++iter;
-   for(;iter!=cereals.end();iter++)
+   for(;iter!=cereals.end();++iter)
    {
        if(iter->getfat()<minval)
        {
