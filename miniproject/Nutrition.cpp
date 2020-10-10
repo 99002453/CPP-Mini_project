@@ -86,7 +86,7 @@ cereals.push_back(cereal(f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_c
    std::string Nutrition::bestCereal()
    {
    std::list<cereal>::iterator iter= cereals.begin();;
-   	int count=0;
+   	//int count=0;
    	auto min_iter=iter;
    	int minval=cereals.begin()->getfat();
    	++iter;
