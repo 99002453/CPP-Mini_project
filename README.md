@@ -3,4 +3,4 @@
 
 ![cpp-check-action](https://github.com/99002453/Mini_project/workflows/cpp-check-action/badge.svg)
 ![C/C++ CI](https://github.com/99002453/Mini_project/workflows/C/C++%20CI/badge.svg)
-![C/C++ CI](https://github.com/99002453/Mini_project/workflows/C/C++%20CI/badge.svg)
+![valgrind](https://github.com/99002453/Mini_project/workflows/valgrind/badge.svg)
