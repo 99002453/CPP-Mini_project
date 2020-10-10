@@ -1,9 +1,9 @@
-name: cppcheck-action
+name: cpp-check-action
 on: [push]
 
 jobs:
   build:
-    name: cppcheck
+    name: cpp-check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
