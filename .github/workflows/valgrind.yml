@@ -18,5 +18,4 @@ jobs:
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: valgrind-check
-      run: |
-        valgrind miniproject ./all.out
+      run: valgrind chmod 777 miniproject/all.out
