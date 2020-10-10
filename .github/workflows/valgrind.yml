@@ -20,4 +20,4 @@ jobs:
     - name: valgrind-check
       run: |
         make 
-        valgrind ./miniproject/all.out
+        valgrind miniproject ./all.out
