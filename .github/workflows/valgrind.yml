@@ -19,5 +19,6 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: valgrind-check
       run: |
-        g++ *.cpp
+        g++ miniproject cereal-test.cpp 
+        g++ miniproject Nutrition-test.cpp
         valgrind miniproject ./all.out
