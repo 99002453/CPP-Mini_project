@@ -1,5 +1,6 @@
 #include "cereal.h"
 #include "Food.h"
+//THIS IS DEMO
 
 		cereal::cereal():Food(),shelf(0){ }
  	 	cereal::cereal(std::string f_name,int f_cal,int f_protein,int f_fat,int f_sodium,double f_fiber,double f_carbo,int f_sugars,int f_potass,int f_vitamins,double f_rating,int f_shelf):Food( f_name, f_cal, f_protein, f_fat, f_sodium, f_fiber, f_carbo, f_sugars, f_potass, f_vitamins, f_rating),shelf(f_shelf){}
