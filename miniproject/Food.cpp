@@ -19,6 +19,8 @@
 		 }
 		 int Food::getSugars()
 		 {
+			 int x=0;
+			 x=x+1;
 		 	 return sugars;
 		 }
 		 int Food::getfat()
@@ -30,4 +32,8 @@
 			return fiber;
 		 
 		 }
+
+
+
+
 
