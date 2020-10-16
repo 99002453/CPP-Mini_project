@@ -97,8 +97,8 @@ name="",cal=0,prot=0,fat=0,sod=0,fib=0.0,carb=0.0,sugar=0,pot=0,vit=0,rate=0.0,s
 
 TEST_F(FoodTest, DefaultConstructor) {
   cereal ft;
-  EXPECT_EQ(0,ft.getSugars());
   EXPECT_EQ(0,ft.getfat());
+  EXPECT_EQ(0,ft.getSugars());
   EXPECT_EQ(0,ft.getCalories());
   EXPECT_EQ(0,ft.getProteins());
 }
